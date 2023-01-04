@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<head>
+		<title>Marvel</title>
+		<link rel="icon" href="images/logo.png">
+		<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+<div id="navbar">
+	<h1>Marvel Introduce</h1>
+	<ul>
+		<li><a href="index.html" style='color:red;'>Home</a></li>
+		<li><a href='movie.html' style='color:red;'>Movie</a></li>
+		<li><a href="character.html" style='color:red;'>Character</a></li>
+	</ul>
+</div>
+<div id='content'>
+	<br>
+	<img src="images/marvel.png">
+	<br>
+	<p>
+		前稱漫威出版公司和漫威漫畫集團,是一家美國的漫畫公司,由漫威娛樂所持有。
+		<br>
+		漫威漫畫由以美國西部大開發時代為題材的低俗雜誌的出版商馬丁·古斯曼於1939年成立,當時公司的名稱為及時漫畫。
+		<br>
+		由於受到來自電視和其他媒體的競爭，到了1950年代早期和中期,漫畫書已經過時。
+		<br>
+		自2008年起,漫威娛樂的子公司漫威影業開始拍攝漫威電影宇宙系列,將漫畫中的故事再次搬上螢幕。
+		<br>
+		2009年12月31日,華特迪士尼公司以42.4億美元現金加股票的價格收購漫威娛樂。
+	</p>
+</div>
+
+<script>
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+let currentScrollPos = window.pageYOffset;
+if (prevScrollpos > currentScrollPos) {
+document.getElementById("navbar").style.top = "0";
+} else {
+document.getElementById("navbar").style.top = "-50px";
+}
+prevScrollpos = currentScrollPos;
+}
+</script>
+</body>

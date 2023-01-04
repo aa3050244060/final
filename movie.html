@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<head>
+		<title>Marvel</title>
+		<link rel="icon" href="images/logo.png">
+		<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+<div id="navbar">
+	<h1>The Avengers</h1>
+	<ul>
+		<li><a href="index.html" style='color:red;'>Home</a></li>
+		<li><a href='movie.html' style='color:red;'>Movie</a></li>
+		<li><a href="character.html" style='color:red;'>Character</a></li>
+	</ul>
+</div>
+<div id='c_content'>
+	<div>
+		<bottom class="click1">
+			<img src="images/tm1.jpg">
+		</bottom>
+		<bottom class="click2">
+			<img src="images/ta2.jpg">
+		</bottom>	
+		<bottom class="click3">
+			<img src="images/ta3.jpg">
+		</bottom>
+		<bottom class="click4">
+			<img src="images/ta4.jpg">
+		</bottom>
+		<br>
+		<p class="ta1">
+			美國隊長自冰獄中甦醒,而邪惡勢力也悄悄集結,力量龐大到極為驚人的地步,已非單一超級英雄就能解決。為了保護地球的安危,神盾局(S.H.I.E.L.D)局長尼克福瑞費盡心力將來自各方的超級英雄聚集一堂,其中包括鋼鐵人、綠巨人浩克、雷神索爾、美國隊長、鷹眼與黑寡婦等人。於是「復仇者聯盟」也就此組成。
+		</p>
+		<p class="ta2">
+			在《復仇者聯盟2：奧創紀元》中,卸下鋼鐵衣的東尼史塔克為了保護世界,發明了「奧創」一個有自我意識、學習能力的人工智能機器人,並將指揮機器人軍團的大權交給奧創。然後不斷進化的奧創得出了「人類是地球上最大威脅」的結論,進而開始實施清除人類的毀滅計畫,擁有強大能力的新角色緋紅女巫以及快銀也將加入戰局。復仇者聯盟再度集合,解決這個由他們親手造成的全球危機！
+		</p>
+		<p class="ta3">
+			一部集漫威電影宇宙10年之大成的宏偉鉅作,《復仇者聯盟3：無限之戰》將帶來前所未見,最極致、最致命的存亡對決。復仇者聯盟和他們的超級英雄盟友們必須要不顧一切攜手合作才有可能組止最強的終極反派薩諾斯將整個宇宙毀滅。
+		</p>
+		<p class="ta4">
+			故事發生在《復仇者聯盟3 無限戰爭》之後,使用無限手套後,造成全宇宙一半的生命隨機消失。
+			<br>
+			在泰坦星上和滅霸結束了戰鬥的鋼鐵俠托尼,在返回地球的途中遭遇了缺水和沒有糧食的境地,幸得驚奇隊長出手相救。
+			回到地球後,決定前去討伐滅霸並尋回寶石,卻發現滅霸已經將寶石毀掉了。五年過去了,已經消失的斯科特·朗（蟻人）來到了復仇者總部,並告知眾人,他們仍然有機會可以逆轉滅霸的所作所為。
+		</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous">
+</script>
+
+<script>
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+let currentScrollPos = window.pageYOffset;
+if (prevScrollpos > currentScrollPos) {
+document.getElementById("navbar").style.top = "0";
+} else {
+document.getElementById("navbar").style.top = "-50px";
+}
+prevScrollpos = currentScrollPos;
+}
+
+	$(document).ready(function(){
+	  $(".click1").click(function(){
+		$(".ta1").toggle();
+		$(".ta2").hide();
+		$(".ta3").hide();
+		$(".ta4").hide();
+	  })
+	});
+	$(document).ready(function(){
+	  $(".click2").click(function(){
+		$(".ta2").toggle();
+		$(".ta3").hide();
+		$(".ta4").hide();
+		$(".ta1").hide();
+	  })
+	});
+	$(document).ready(function(){
+	  $(".click3").click(function(){
+		$(".ta3").toggle();
+		$(".ta4").hide();
+		$(".ta1").hide();
+		$(".ta2").hide();
+	  })
+	});
+	$(document).ready(function(){
+	  $(".click4").click(function(){
+		$(".ta4").toggle();
+		$(".ta1").hide();
+		$(".ta2").hide();
+		$(".ta3").hide();
+	  })
+	});
+
+</script>
+</body>
+</html>

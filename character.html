@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<head>
+		<title>Marvel</title>
+		<link rel="icon" href="images/logo.png">
+		<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+<div id="navbar">
+	<h1>Marvel Character</h1>
+	<ul>
+		<li><a href="index.html" style='color:red;'>Home</a></li>
+		<li><a href='movie.html' style='color:red;'>Movie</a></li>
+		<li><a href="character.html" style='color:red;'>Character</a></li>
+	</ul>
+</div>
+<div id='c_content'>
+	<div>
+		<bottom class="click1">
+			<img src="images/ca.png">
+		</bottom>
+		<bottom class="click2">
+			<img src="images/im.png">
+		</bottom>	
+		<bottom class="click3">
+			<img src="images/t.png">
+		</bottom>
+		<bottom class="click4">
+			<img src="images/hk.png">
+		</bottom>
+		<bottom class="click5">
+			<img src="images/h.png">
+		</bottom>
+		<bottom class="click6">
+			<img src="images/b.png">
+		</bottom>
+		<br>
+		<p class="ca">
+			美國隊長(Captain America):<br>
+			本名為史蒂芬·羅傑斯(Steven Rogers),是出現在漫威漫畫中的虛構超級英雄。由喬·西蒙及傑克·科比所創作,首次出現於《美國隊長》(1941年3月)。
+			<br>
+			美國隊長經常被視為美國的愛國精神的象徵，當初只是作為為美國提升國家形象和宣傳的用途，漫威漫畫後來在1964年創作了一支超級英雄英雄團隊復仇者聯盟。
+		</p>
+		<p class="im">
+			鋼鐵人(Iron Man):<br>
+			本名安東尼·愛德華·史塔克(Anthony Edward Stark)是一位在漫威漫畫世界中的虛構漫畫超級英雄，第一代鋼鐵人。
+			<br>
+			鋼鐵人由史丹·李，拉里·李伯,唐·赫克與傑克·科比共同創造。鋼鐵人首次出現於《懸疑故事》第39期（1963年三月）。
+
+		</p>
+		<p class="t">
+			雷神索爾(Thor):<br>
+			是漫威漫畫旗下的一位超級英雄角色,最先出現於《神秘之旅》第83期(1962年8月)。
+			<br>
+			索爾的原形為北歐神話中的索爾,是「戰神」奧丁之子。他常成為好友鋼鐵人的對比,特顯了科學與神話的差別。
+		</p>
+		<p class="hk">
+			浩克(The Hulk):<br>
+			本名布魯斯·班納(Bruce Banner),是出現在漫威漫畫出版物中的英雄虛構人物。浩克由史丹·李與傑克·科比所創作,首次出現於《不可思議的浩克》第一部第一期(1962年二月)。
+			<br>
+			物理學家羅柏特·布魯斯·班納博士在意外受自己製造出的伽瑪炸彈放射線污染後變成了名為浩克的憤怒怪物。班納與浩克兩個身分時常造成毀滅性的破壞,因此常成為警方與有關單位追捕的對象。
+		</p>
+		<p class="h">
+			鷹眼(Hawkeye):<br>
+			是漫威漫畫的一個虛構超級英雄,由作家史丹·李與漫畫家唐·赫克一起創造。
+			<br>
+			鷹眼的本名為柯林頓·弗朗西斯·巴頓(Clinton Francis Barton),曾化名為「歌利亞」與「浪人」並曾短暫扮演「美國隊長」。
+			<br>
+			他原是個在馬戲團長大的孤兒,在某次演出被鋼鐵人奪去所有觀眾注意後決定也要成為超級英雄,擅長武術、箭術與冷兵器。
+		</p>
+		<p class="b">
+			黑寡婦(Black Widow):<br>
+			是漫威漫畫所出版的美國漫畫書中的一位虛構超級英雄。由漫畫編輯史丹·李創造,故事腳本由唐·里科完成,而繪製則由唐·赫克完成。
+			<br>
+			她於 《懸疑故事》第52期(1964年4月出版)中首次登場。這個角色最早被定位成俄國間諜,並且是超級英雄鋼鐵人的對手。她隨後在漫畫裡叛逃至美國,成為虛構的秘密特務組織神盾局的一名特務；後來她也成為超級英雄團隊復仇者聯盟的成員之一。
+		</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous">
+</script>
+
+<script>
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+let currentScrollPos = window.pageYOffset;
+if (prevScrollpos > currentScrollPos) {
+document.getElementById("navbar").style.top = "0";
+} else {
+document.getElementById("navbar").style.top = "-50px";
+}
+prevScrollpos = currentScrollPos;
+}
+
+	$(document).ready(function(){
+	  $(".click1").click(function(){
+		$(".ca").toggle();
+		$(".im").hide();
+		$(".t").hide();
+		$(".hk").hide();
+		$(".h").hide();
+		$(".b").hide();
+	  })
+	});
+	$(document).ready(function(){
+	  $(".click2").click(function(){
+		$(".im").toggle();
+		$(".ca").hide();
+		$(".t").hide();
+		$(".hk").hide();
+		$(".h").hide();
+		$(".b").hide();
+	  })
+	});
+	$(document).ready(function(){
+	  $(".click3").click(function(){
+		$(".t").toggle();
+		$(".ca").hide();
+		$(".im").hide();
+		$(".hk").hide();
+		$(".h").hide();
+		$(".b").hide();
+	  })
+	});
+	$(document).ready(function(){
+	  $(".click4").click(function(){
+		$(".hk").toggle();
+		$(".ca").hide();
+		$(".im").hide();
+		$(".t").hide();
+		$(".h").hide();
+		$(".b").hide();
+	  })
+	});
+	$(document).ready(function(){
+	  $(".click5").click(function(){
+		$(".h").toggle();
+		$(".ca").hide();
+		$(".im").hide();
+		$(".t").hide();
+		$(".hk").hide();
+		$(".b").hide();
+	  })
+	});
+	$(document).ready(function(){
+	  $(".click6").click(function(){
+		$(".b").toggle();
+		$(".ca").hide();
+		$(".im").hide();
+		$(".t").hide();
+		$(".hk").hide();
+		$(".h").hide();
+	  })
+	});
+
+</script>
+</body>
+</html>
